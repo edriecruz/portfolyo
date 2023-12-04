@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.Figma{
+    background-color: #efe9dc;
+    text-align: center;
+    position: relative;
+    cursor: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    .Figma-logo{
+        width: 50px;
+        padding: 5em;
+    }
+    .Figma-UX{
+        font-family: 'Raleway', sans-serif;
+        font-size: clamp(1rem, 5vw, 3rem); 
+        color: #2c2c2c;
+        letter-spacing: 10px;
+        .Figma-UX-Project{
+            display: flex;
+            gap: 2em;
+            padding-top: 2em;
+        }
+    }
+    .Figma-Graphics{
+        padding: 5em;    
+        font-family: 'Raleway', sans-serif;
+        font-size: clamp(1rem, 5vw, 3rem); 
+        color: #2c2c2c;
+        letter-spacing: 10px;
+        .Figma-GD-Project{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em;
+            padding-top: 1em;
+        }
+    }
+}

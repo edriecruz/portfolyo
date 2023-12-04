@@ -1,0 +1,39 @@
+a{
+    cursor: none;
+}
+.project{
+    width: 5em;
+    border-radius: 10px;
+    z-index: 0;
+    position: relative;
+}
+
+.Modal{
+    position: fixed;
+    left: 0;top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(#000, .2);
+    overflow-y: scroll;
+
+    .deets-Modal{
+        position: absolute;
+        left: 50%;
+        top: 300%;
+        transform: translate(-50%, -50%);
+    }
+    .close-Modal{
+        position: fixed;
+        width: 20px;
+        right: 360px;
+        top: 20px;
+    }
+    .Arrow{
+        position: fixed;
+        width: 80px;
+        right: 330px;
+        top: 100px;
+    }
+}
+

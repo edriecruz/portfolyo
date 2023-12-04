@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.Me{
+    background-color: #efe9dc;
+    height: 100lvh;
+    text-align: center ;
+    position: relative;
+    cursor: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Me-Vid{
+    height: 20%;
+
+    .Me-Vid-Item{
+        height: 20em;
+        width: 100%;
+        object-fit: cover;
+        border-bottom: #2c2c2c solid 5px;
+    }
+}
+
+.Back-Button{
+    position: absolute;
+    top: 4em;
+    left: 2em;
+    .Back-Button-Item{
+        width: 4em;
+        color: #2c2c2c;
+        cursor: none;
+    }
+}
+
+    .Portrait{
+        .Portrait-Item{
+            width: 35em;
+        }
+    }

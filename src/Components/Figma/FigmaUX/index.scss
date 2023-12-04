@@ -1,0 +1,14 @@
+.FUX{
+    font-size: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 15em;
+    line-height: 2em;
+
+    .FUX-img{
+        width: 10em;
+    }
+}

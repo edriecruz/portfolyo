@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.React{
+    background-color: #efe9dc;
+    text-align: center ;
+    position: relative;
+    cursor: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5em;
+    height: calc(100vh - 5em);
+    overflow: hidden;
+
+    .React-logo{
+        width: 75px;
+    }
+    .React-Projects{
+        padding: 3em;    
+        font-family: 'Raleway', sans-serif;
+        font-size: clamp(1rem, 5vw, 3rem); 
+        color: #2c2c2c;
+        letter-spacing: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        .React-Project{
+            display: flex;
+            gap: 2em;
+        }
+    }
+}

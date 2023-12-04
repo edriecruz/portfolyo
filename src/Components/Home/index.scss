@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #efe9dc;
+  cursor: none;
+}
+
+.cursor{
+  position: fixed;
+  top: 0;left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #ee7828;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.Home-header {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 8px solid #2c2c2c;
+}
+
+.Home-header-1 {
+  flex-grow: 2;
+  border-right: #2c2c2c 5px solid;
+  display: flex;
+  justify-content: center;
+
+  h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3em;
+    color: #2c2c2c;
+    letter-spacing: 10px;
+  }
+}
+
+
+.Home-header-2{
+  flex-grow: 1;
+
+  .star-rotating{
+    width: 125px;
+  }
+}
+
+.Home-body{
+  height: 60vh;
+ 
+  .Home-body-video{
+    height: 60vh;
+}
+}
+
+
+.Home-footer{
+  height: 18vh;
+  border-top: #2c2c2c 8px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20em;
+
+  .FIGMA, .FIGMA-svg{
+    width: 50px;
+  }
+  .REACT, .REACT-svg{
+    width: 75px;
+  }
+}
