@@ -38,12 +38,13 @@ a{
     }
     .close-Modal{
         position: fixed;
-        top: 20px;
         @include Library.s{
+            top: 160px;
             right: 100px;
             width: 10px;
         }
         @include Library.m{
+            top: 20px;
             right: 100px;
             width: 20px;
         }
@@ -54,12 +55,13 @@ a{
     .Arrow{
         position: fixed;
         width: 80px;
-        top: 100px;
         @include Library.s{
+            top: 370px;
             right: 100px;
             width: 40px;
         }
         @include Library.m{
+            top: 100px;
             right: 100px;
             width: 80px;
         }
