@@ -1,7 +1,8 @@
+@use 'src/Library.scss';
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 .React{
-    background-color: #efe9dc;
+    background-color: Library.$bgcolor;
     text-align: center ;
     position: relative;
     cursor: none;
@@ -19,14 +20,22 @@
         padding: 3em;    
         font-family: 'Raleway', sans-serif;
         font-size: clamp(1rem, 5vw, 3rem); 
-        color: #2c2c2c;
+        color: Library.$primary;
         letter-spacing: 10px;
         display: flex;
         flex-direction: column;
         gap: 1em;
         .React-Project{
             display: flex;
+            justify-content: center;
+            align-items: center;
             gap: 2em;
+            @include Library.s{
+                flex-direction: column;
+            }
+            @include Library.m{
+                flex-direction: row;
+            }
         }
     }
 }

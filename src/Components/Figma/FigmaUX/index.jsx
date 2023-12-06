@@ -25,7 +25,9 @@ const FigmaUX = ({ fux }) => {
         whileHover={{ scale: 1.1 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
      />
-      {fux.title}
+     <h1 className='FUX-title'>
+     {fux.title}
+     </h1>
     </div>
   )
 }

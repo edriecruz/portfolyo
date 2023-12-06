@@ -1,0 +1,31 @@
+$bgcolor: #efe9dc;
+$primary: #2c2c2c;
+$secondary: #ee7828;
+
+$breakpoints: (
+  "s": 0,
+  "m": 720px,
+  "l": 1200px,
+);  
+
+// mixins - breakpoints
+@mixin s {
+    @media (min-width: map-get($breakpoints, "s")) {
+      @content;
+    }
+  }
+  @mixin m {
+    @media (min-width: map-get($breakpoints, "m")) {
+      @content;
+    }
+  }
+  @mixin l {
+    @media (min-width: map-get($breakpoints, "l")) {
+      @content;
+    }
+  }
+  @mixin breakpoint($bp: 0) {
+    @media (min-width: $bp) {
+      @content;
+    }
+  }

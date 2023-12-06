@@ -1,7 +1,8 @@
+@use 'src/Library.scss';
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 .Me{
-    background-color: #efe9dc;
+    background-color: Library.$bgcolor;
     height: 100lvh;
     text-align: center ;
     position: relative;
@@ -17,7 +18,7 @@
         height: 20em;
         width: 100%;
         object-fit: cover;
-        border-bottom: #2c2c2c solid 5px;
+        border-bottom: Library.$primary solid 5px;
     }
 }
 
@@ -26,14 +27,31 @@
     top: 4em;
     left: 2em;
     .Back-Button-Item{
-        width: 4em;
-        color: #2c2c2c;
+        color: Library.$primary;
         cursor: none;
+        @include Library.s{
+            width: 2em;
+        }
+        @include Library.m{
+            width: 3em;
+        }
+        @include Library.l{
+            width: 4em;
+        }
     }
 }
 
     .Portrait{
+        overflow: hidden;
         .Portrait-Item{
-            width: 35em;
+            @include Library.s{
+                width: 20em;
+            }
+            @include Library.m{
+                width: 30em;
+            }
+            @include Library.l{
+                width: 35em;
+            }
         }
     }

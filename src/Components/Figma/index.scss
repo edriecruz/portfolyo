@@ -1,7 +1,8 @@
+@use 'src/Library.scss';
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 .Figma{
-    background-color: #efe9dc;
+    background-color: Library.$bgcolor;
     text-align: center;
     position: relative;
     cursor: none;
@@ -13,24 +14,50 @@
     .Figma-logo{
         width: 50px;
         padding: 5em;
+        pointer-events: none;
+
+        @include Library.s{
+            padding: 2em;
+        }
+        @include Library.m{
+            padding: 3.5em;
+        }
+        @include Library.l{
+            padding: 5em;
+        }
+        
     }
     .Figma-UX{
         font-family: 'Raleway', sans-serif;
         font-size: clamp(1rem, 5vw, 3rem); 
-        color: #2c2c2c;
+        color: Library.$primary;
         letter-spacing: 10px;
         .Figma-UX-Project{
             display: flex;
-            gap: 2em;
             padding-top: 2em;
+            @include Library.s{
+                gap: .5em;
+            }
+            @include Library.m{
+                gap: 2em;
+            }
         }
     }
     .Figma-Graphics{
         padding: 5em;    
         font-family: 'Raleway', sans-serif;
         font-size: clamp(1rem, 5vw, 3rem); 
-        color: #2c2c2c;
+        color: Library.$primary;
         letter-spacing: 10px;
+        @include Library.s{
+            padding: 2em;
+        }
+        @include Library.m{
+            padding: 3.5em;
+        }
+        @include Library.l{
+            padding: 5em;
+        }
         .Figma-GD-Project{
             display: flex;
             flex-wrap: wrap;

@@ -1,3 +1,4 @@
+@use 'src/Library.scss';
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 .Home {
@@ -6,7 +7,7 @@
   justify-content: space-between;
   text-align: center;
   min-height: 100vh;
-  background-color: #efe9dc;
+  background-color: Library.$bgcolor;
   cursor: none;
 }
 
@@ -15,7 +16,7 @@
   top: 0;left: 0;
   width: 50px;
   height: 50px;
-  background-color: #ee7828;
+  background-color: Library.$secondary;
   border-radius: 50%;
   pointer-events: none;
   z-index: 999;
@@ -24,56 +25,101 @@
 .Home-header {
   height: 20vh;
   width: 100%;
+  padding: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 8px solid #2c2c2c;
+  border-bottom: 8px solid Library.$primary;
 }
 
 .Home-header-1 {
-  flex-grow: 2;
-  border-right: #2c2c2c 5px solid;
+  flex-grow: 3;
+  border-right: Library.$primary 5px solid;
   display: flex;
   justify-content: center;
 
   h1{
     font-family: 'Raleway', sans-serif;
-    font-size: 3em;
-    color: #2c2c2c;
+    font-size: clamp(.5rem, 5vw, 4rem); 
+    color: Library.$primary;
     letter-spacing: 10px;
   }
 }
 
 
 .Home-header-2{
-  flex-grow: 1;
+  flex-grow: 2;
+  padding: 1em;
 
   .star-rotating{
-    width: 125px;
+    @include Library.s{
+      width: 50px;
+    }
+    @include Library.m{
+      width: 75px;
+    }
+    @include Library.l{
+      width: 125px;
+    }
+
+
   }
 }
 
 .Home-body{
   height: 60vh;
+  display: flex;
+  justify-content: center;
  
   .Home-body-video{
-    height: 60vh;
-}
+      width: 100%;
+    }
 }
 
 
 .Home-footer{
   height: 18vh;
-  border-top: #2c2c2c 8px solid;
+  border-top: Library.$primary 8px solid;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20em;
+  @include Library.s{
+    gap: 5em;
+  }
+  @include Library.m{
+    gap: 15em;
+  }
+  @include Library.l{
+    gap: 20em;
+  }
+
+
 
   .FIGMA, .FIGMA-svg{
-    width: 50px;
+    @include Library.s{
+      width: 20px;
+    }
+    @include Library.m{
+      width: 40px;
+    }
+    @include Library.l{
+      width: 50px;
+    }
+
+
   }
   .REACT, .REACT-svg{
-    width: 75px;
+    @include Library.s{
+      width: 40px;
+    }
+    @include Library.m{
+      width: 65px;
+    }
+    @include Library.l{
+      width: 75px;
+    }
+
+
   }
+
 }

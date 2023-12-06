@@ -1,14 +1,43 @@
+@use 'src/Library.scss';
 .FUX{
     font-size: .5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em;
-    width: 15em;
-    line-height: 2em;
+    @include Library.s{
+        width: 10em;
+    }
+    @include Library.m{
+        width: 12.5em;
+    }
+    @include Library.l{
+        width: 15em;
+    }
+    .FUX-title{
+        line-height: 2em;
+        font-size: clamp(.5rem, 3vw, 1rem);
+        font-weight: 600;
+        
+    @include Library.s{
+        display: none;
+    }
+    @include Library.m{
+        display: flex;
+        width: 10em;
+    }
+    }
 
     .FUX-img{
         width: 10em;
+        @include Library.s{
+            width: 7.5em;
+        }
+        @include Library.m{
+            width: 7.5em;
+        }
+        @include Library.l{
+            width: 10em;
+        }
     }
 }
