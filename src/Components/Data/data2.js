@@ -12,6 +12,8 @@ import kishag1 from '../../Assets/Figma/Graphics/Kisha Greeting.png'
 import peterg1 from '../../Assets/Figma/Graphics/Peter Greeting.png'
 import keng1 from '../../Assets/Figma/Graphics/Ken Greeting.png'
 import farrahg1 from '../../Assets/Figma/Graphics/Farrah Greeting.png'
+import kristinebg1 from '../../Assets/Figma/Graphics/Tine Greeting.png'
+import kristinecg1 from '../../Assets/Figma/Graphics/Ate Tin Greeting.png'
 
 const fgdprojects = [
     {
@@ -68,6 +70,16 @@ const fgdprojects = [
         id: 'fgd11',
         title: 'Farrah Greeting',
         img: farrahg1
+    },
+    {
+        id: 'fgd12',
+        title: 'Kristine B Greeting',
+        img: kristinebg1
+    },
+    {
+        id: 'fgd13',
+        title: 'Kristine C Greeting',
+        img: kristinecg1
     },
 ]
 

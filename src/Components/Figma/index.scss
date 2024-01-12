@@ -36,15 +36,14 @@
             display: flex;
             padding-top: 2em;
             @include Library.s{
-                gap: .5em;
+                gap: .2em;
             }
             @include Library.m{
-                gap: 2em;
+                gap: .5em;
             }
         }
     }
     .Figma-Graphics{
-        padding: 5em;    
         font-family: 'Raleway', sans-serif;
         font-size: clamp(1rem, 5vw, 3rem); 
         color: Library.$primary;
@@ -53,10 +52,10 @@
             padding: 2em;
         }
         @include Library.m{
-            padding: 3.5em;
+            padding: 3em;
         }
         @include Library.l{
-            padding: 5em;
+            padding: 4em;
         }
         .Figma-GD-Project{
             display: flex;
