@@ -2,23 +2,23 @@ import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import './index.scss'
 
-import mevideo from '../../Assets/c5d44ec4-1585-940f-217e-7749274c576a.gif'
+import mevideo from '../../Assets/Untitled design.gif'
 import backbutton from '../../Assets/circle-left.svg'
 import portrait from '../../Assets/PORTFOLIO-nobg.png'
 import { Link } from 'react-router-dom'
 
 const Me = () => {
   const [mousePosition, setMousePosition] = useState({
-    x:0,
-    y:0
+    x: 0,
+    y: 0
   })
   const [cursorVariant, setCursorVariant] = useState("default")
 
   useEffect(() => {
     const mouseMove = e => {
       setMousePosition({
-        x:e.clientX,
-        y:e.clientY
+        x: e.clientX,
+        y: e.clientY
       })
     }
     window.addEventListener("mousemove", mouseMove);
@@ -49,7 +49,7 @@ const Me = () => {
       backgroundColor: '#efe9dc',
       mixBlendMode: 'difference'
     },
-    focus :{
+    focus: {
       height: 40,
       width: 40,
       x: mousePosition.x - 20,
@@ -66,41 +66,114 @@ const Me = () => {
 
   return (
     <div className='Me'>
+
+      {/* ----- MOUSE ----- */}
       <motion.div
         className='cursor'
         variants={variants}
         animate={cursorVariant}
       />
 
-      <div className="Me-Vid">
-        <img 
-          src={mevideo} 
-          alt="" 
-          className='Me-Vid-Item'/>
-      </div>
-
+      {/* ----- BACK BUTTON ----- */}
       <div className="Back-Button">
         <Link
           to='/'>
-            <img 
-          src={backbutton} 
-          alt="" 
-          className='Back-Button-Item'
-          onMouseEnter={textEnter}
-          onMouseDown={textFocus} 
-          onMouseLeave={textLeave}/>
+          <img
+            src={backbutton}
+            alt=""
+            className='Back-Button-Item'
+            onMouseEnter={textEnter}
+            onMouseDown={textFocus}
+            onMouseLeave={textLeave} />
         </Link>
       </div>
 
-        <div className="Portrait">
-          <img 
-            src={portrait} 
-            alt="" 
-            className='Portrait-Item'
-            onMouseEnter={photoEnter}
-            onMouseLeave={textLeave} />
+      {/* ----- CONTENT ----- */}
+
+      <div class="grid-container">
+        <div class="gridbox-1">
+          <div
+            class="grid-item grid-item-1"
+            tabindex="-1"
+            onMouseEnter={textEnter}
+            onMouseDown={textFocus}
+            onMouseLeave={textLeave}>
+            <img
+              src={mevideo}
+              alt=""
+              className='Me-Vid-Item' />
+          </div>
+          <div
+            class="grid-item grid-item-2"
+            tabindex="-1"
+            onMouseEnter={textEnter}
+            onMouseDown={textFocus}
+            onMouseLeave={textLeave}></div>
+          <div
+            class="grid-item grid-item-3"
+            tabindex="-1"
+            onMouseEnter={textEnter}
+            onMouseDown={textFocus}
+            onMouseLeave={textLeave}></div>
         </div>
+        <div class="gridbox-2">
+          <div
+            class="grid-item grid-item-4"
+            tabindex="-1"
+            onMouseEnter={textEnter}
+            onMouseDown={textFocus}
+            onMouseLeave={textLeave}></div>
+          <div
+            class="grid-item grid-item-5"
+            tabindex="-1"
+            onMouseEnter={textEnter}
+            onMouseDown={textFocus}
+            onMouseLeave={textLeave}></div>
+          <div
+            class="grid-item grid-item-6"
+            tabindex="-1"
+            onMouseEnter={textEnter}
+            onMouseDown={textFocus}
+            onMouseLeave={textLeave}></div>
+          <div
+            class="grid-item grid-item-7"
+            tabindex="-1"
+            onMouseEnter={textEnter}
+            onMouseDown={textFocus}
+            onMouseLeave={textLeave}></div>
+          <div
+            class="grid-item grid-item-8"
+            tabindex="-1"
+            onMouseEnter={textEnter}
+            onMouseDown={textFocus}
+            onMouseLeave={textLeave}></div>
+          <div
+            class="grid-item grid-item-9"
+            tabindex="-1"
+            onMouseEnter={textEnter}
+            onMouseDown={textFocus}
+            onMouseLeave={textLeave}></div>
+
+        </div>
+      </div>
+
+      {/* <div className="Me-Vid">
+        <img
+          src={mevideo}
+          alt=""
+          className='Me-Vid-Item' />
+      </div>
+
+      <div className="Portrait">
+        <img
+          src={portrait}
+          alt=""
+          className='Portrait-Item'
+          onMouseEnter={photoEnter}
+          onMouseLeave={textLeave} />
+      </div> */}
     </div>
+
   )
 }
 

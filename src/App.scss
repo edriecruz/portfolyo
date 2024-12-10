@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@use 'src/Library.scss';
 
 .App {
   display: flex;
@@ -6,16 +6,17 @@
   justify-content: space-between;
   text-align: center;
   min-height: 100vh;
-  background-color: #efe9dc;
+  background-color: Library.$bgcolor;
   cursor: none;
 }
 
 .cursor{
   position: fixed;
-  top: 0;left: 0;
+  top: 0;
+  left: 0;
   width: 50px;
   height: 50px;
-  background-color: #ee7828;
+  background-color: Library.$secondary;
   border-radius: 50%;
   pointer-events: none;
 }
@@ -26,19 +27,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 8px solid #2c2c2c;
+  border-bottom: 8px solid Library.$primary;
 }
 
 .App-header-1 {
   flex-grow: 2;
-  border-right: #2c2c2c 5px solid;
+  border-right: Library.$primary 5px solid;
   display: flex;
   justify-content: center;
 
   h1{
-    font-family: 'Raleway', sans-serif;
+    font-family: Library.$font-family;
     font-size: 3em;
-    color: #2c2c2c;
+    color: Library.$primary;
     letter-spacing: 10px;
   }
 }
@@ -63,7 +64,7 @@
 
 .App-footer{
   height: 18vh;
-  border-top: #2c2c2c 8px solid;
+  border-top: Library.$primary 8px solid;
   display: flex;
   align-items: center;
   justify-content: center;

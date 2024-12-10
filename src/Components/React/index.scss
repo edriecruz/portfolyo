@@ -1,5 +1,4 @@
 @use 'src/Library.scss';
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 .React{
     background-color: Library.$bgcolor;
@@ -18,7 +17,7 @@
     }
     .React-Projects{
         padding: 3em;    
-        font-family: 'Raleway', sans-serif;
+        font-family: Library.$font-family;
         font-size: clamp(1rem, 5vw, 3rem); 
         color: Library.$primary;
         letter-spacing: 10px;

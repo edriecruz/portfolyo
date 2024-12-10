@@ -1,10 +1,3 @@
-// sample graphics
-import sample1 from '../../Assets/Figma/Graphics/sample1.png'
-import sample2 from '../../Assets/Figma/Graphics/sample2.png'
-import sample3 from '../../Assets/Figma/Graphics/sample3.png'
-import sample4 from '../../Assets/Figma/Graphics/sample4.png'
-import sample5 from '../../Assets/Figma/Graphics/sample5.png'
-
 // birthday greetings
 import lejzg1 from '../../Assets/Figma/Graphics/Lejz Greeting.png'
 import adig1 from '../../Assets/Figma/Graphics/Adi Greeting.png'
@@ -16,31 +9,6 @@ import kristinebg1 from '../../Assets/Figma/Graphics/Tine Greeting.png'
 import kristinecg1 from '../../Assets/Figma/Graphics/Ate Tin Greeting.png'
 
 const fgdprojects = [
-    {
-        id: 'fgd1',
-        title: 'sample1',
-        img: sample1
-    },
-    {
-        id: 'fgd2',
-        title: 'sample2',
-        img: sample2
-    },
-    {
-        id: 'fgd3',
-        title: 'sample3',
-        img: sample3
-    },
-    {
-        id: 'fgd4',
-        title: 'sample4',
-        img: sample4
-    },
-    {
-        id: 'fgd5',
-        title: 'sample5',
-        img: sample5
-    },
     {
         id: 'fgd6',
         title: 'Lejz Greeting',

@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+// Color Palette
 $bgcolor: #efe9dc;
 $primary: #2c2c2c;
 $secondary: #ee7828;
+
+// Typography
+$font-family: 'Raleway', sans-serif;
+$font-size-base: 16px;
+$font-size-lg: 20px;
+$font-size-sm: 14px;
+
+// Border Radius
+$border-radius: 4px;
 
 $breakpoints: (
   "s": 0,
