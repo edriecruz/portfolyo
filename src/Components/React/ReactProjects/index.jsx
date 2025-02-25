@@ -11,13 +11,9 @@ const ReactProjects = ({ project }) => {
   const rotate = useTransform(time, [0, 10000], [0, 360], { clamp: false });
 
 
-  const [modal, setModal] = useState(false)
-  const openModal = () => {
-    setModal(true);
-  }
-  const closeModal = () => {
-    setModal(false);
-  }
+  const [modal, setModal] = useState(false);
+  const toggleModal = () => setModal(prev => !prev);
+
 
   const stopMovie = (e) => {
     e.target.pause();
@@ -34,7 +30,7 @@ const ReactProjects = ({ project }) => {
         poster={project.img}
         onMouseOver={playMovie}
         onMouseOut={stopMovie}
-        onClick={openModal}
+        onClick={toggleModal}
         src={project.vid}
         whileHover={{ scale: 1.1 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -48,7 +44,7 @@ const ReactProjects = ({ project }) => {
       <motion.img 
         src={xmark} 
         className='close-Modal'
-        onClick={closeModal}
+        onClick={toggleModal}
         style={{ rotate }} 
         whileHover={{ scale:3 }}
         transition={{ 
